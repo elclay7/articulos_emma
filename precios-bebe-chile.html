@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Precios Bebé Chile 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+ :root {
+ --cream: #faf7f2;
+ --warm-white: #fff9f0;
+ --sage: #7a9e87;
+ --sage-light: #a8c4b0;
+ --dusty-rose: #c8847a;
+ --dusty-rose-light: #e8b4ae;
+ --warm-gray: #6b6560;
+ --dark: #2c2825;
+ --accent: #c8847a;
+ --border: #e8e0d5;
+ --shadow: rgba(44,40,37,0.08);
+ --hover: #f5ede6;
+ }
+
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+
+ body {
+ font-family: 'DM Sans', sans-serif;
+ background: var(--cream);
+ color: var(--dark);
+ min-height: 100vh;
+ padding: 0 0 60px;
+ -webkit-tap-highlight-color: transparent;
+ }
+
+ .header {
+ background: linear-gradient(135deg, #e8d5c8 0%, #d4bfb5 40%, #c4b0a8 100%);
+ padding: 52px 40px 44px;
+ position: relative;
+ overflow: hidden;
+ }
+ .header::before {
+ content: '';
+ position: absolute;
+ top: -60px; right: -60px;
+ width: 280px; height: 280px;
+ border-radius: 50%;
+ background: rgba(255,255,255,0.15);
+ }
+ .header::after {
+ content: '';
+ position: absolute;
+ bottom: -40px; left: 20%;
+ width: 160px; height: 160px;
+ border-radius: 50%;
+ background: rgba(255,255,255,0.10);
+ }
+ .header-inner { position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; }
+ .header h1 {
+ font-family: 'DM Serif Display', serif;
+ font-size: 2.5rem;
+ color: var(--dark);
+ letter-spacing: -0.5px;
+ line-height: 1.15;
+ margin-bottom: 8px;
+ }
+ .header h1 em { font-style: italic; color: #7a5c55; }
+ .header p {
+ font-size: 0.9rem;
+ color: var(--warm-gray);
+ font-weight: 400;
+ margin-top: 6px;
+ }
+ .badge {
+ display: inline-flex;
+ align-items: center;
+ gap: 6px;
+ background: rgba(255,255,255,0.5);
+ border: 1px solid rgba(255,255,255,0.7);
+ border-radius: 20px;
+ padding: 5px 14px;
+ font-size: 0.78rem;
+ color: var(--warm-gray);
+ margin-top: 14px;
+ font-weight: 500;
+ letter-spacing: 0.2px;
+ }
+ .badge::before { content: '🗓'; font-size: 0.85rem; }
+
+ .notice {
+ max-width: 1400px;
+ margin: 24px auto 0;
+ padding: 0 30px;
+ }
+ .notice-box {
+ background: #fff8e6;
+ border-left: 4px solid #e8a830;
+ border-radius: 8px;
+ padding: 14px 18px;
+ font-size: 0.82rem;
+ color: #7a6020;
+ line-height: 1.5;
+ }
+ .notice-box strong { color: #5a4010; }
+
+ .container {
+ max-width: 1400px;
+ margin: 28px auto 0;
+ padding: 0 30px;
+ }
+
+ .table-wrap {
+ background: var(--warm-white);
+ border-radius: 18px;
+ border: 1px solid var(--border);
+ overflow-x: auto;
+ box-shadow: 0 4px 24px var(--shadow);
+ }
+
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 0.84rem;
+ min-width: 1100px;
+ }
+
+ thead tr {
+ background: linear-gradient(90deg, #2c2825 0%, #3d3530 100%);
+ }
+ thead th {
+ padding: 16px 14px;
+ text-align: left;
+ font-family: 'DM Sans', sans-serif;
+ font-weight: 600;
+ font-size: 0.75rem;
+ letter-spacing: 0.8px;
+ text-transform: uppercase;
+ color: #e8d5c8;
+ white-space: nowrap;
+ }
+ thead th:first-child { width: 32px; text-align: center; }
+ thead th:nth-child(2) { width: 240px; }
+ thead th.price-col { min-width: 155px; }
+ thead th.avg-col { min-width: 110px; text-align: center; }
+
+ tbody tr {
+ border-bottom: 1px solid var(--border);
+ transition: background 0.15s ease;
+ }
+ tbody tr:hover { background: var(--hover); }
+ tbody tr:last-child { border-bottom: none; }
+
+ tbody tr.cat-header {
+ background: linear-gradient(90deg, #f0e8e0, #f5ede6);
+ border-bottom: 1px solid #ddd0c5;
+ }
+ tbody tr.cat-header td {
+ padding: 9px 14px;
+ font-family: 'DM Serif Display', serif;
+ font-size: 0.88rem;
+ color: var(--dusty-rose);
+ font-weight: 400;
+ letter-spacing: 0.3px;
+ font-style: italic;
+ }
+
+ tbody td {
+ padding: 13px 14px;
+ vertical-align: top;
+ line-height: 1.4;
+ }
+
+ .num {
+ text-align: center;
+ font-size: 0.72rem;
+ color: #bbb0a8;
+ font-weight: 600;
+ width: 32px;
+ padding-top: 15px;
+ }
+
+ .prod-name {
+ font-weight: 500;
+ color: var(--dark);
+ font-size: 0.84rem;
+ line-height: 1.35;
+ }
+ .prod-sub {
+ font-size: 0.73rem;
+ color: #9a9088;
+ margin-top: 3px;
+ }
+ .tag {
+ display: inline-block;
+ background: #e8f0ec;
+ color: var(--sage);
+ font-size: 0.65rem;
+ font-weight: 600;
+ padding: 2px 7px;
+ border-radius: 10px;
+ margin-top: 4px;
+ letter-spacing: 0.3px;
+ text-transform: uppercase;
+ }
+ .tag.alert { background: #fde8e4; color: var(--dusty-rose); }
+ .tag.blue { background: #e0ebf5; color: #5580a0; }
+
+ .price-cell { vertical-align: top; }
+ .price-entry {
+ margin-bottom: 5px;
+ padding-bottom: 5px;
+ border-bottom: 1px solid #f0e8e0;
+ }
+ .price-entry:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+ .store-name {
+ font-size: 0.72rem;
+ color: #9a9088;
+ font-weight: 500;
+ display: block;
+ margin-bottom: 2px;
+ text-transform: uppercase;
+ letter-spacing: 0.4px;
+ }
+ .price-link {
+ display: inline-block;
+ font-weight: 600;
+ font-size: 0.85rem;
+ color: var(--dark);
+ text-decoration: none;
+ transition: color 0.15s;
+ }
+ .price-link:hover { color: var(--dusty-rose); text-decoration: underline; }
+
+ .avg-cell {
+ text-align: center;
+ vertical-align: middle;
+ }
+ .avg-price {
+ font-family: 'DM Serif Display', serif;
+ font-size: 1.1rem;
+ color: var(--dark);
+ font-weight: 600;
+ }
+ .avg-label {
+ font-size: 0.65rem;
+ color: #9a9088;
+ text-transform: uppercase;
+ letter-spacing: 0.5px;
+ margin-top: 2px;
+ }
+
+ .footer {
+ text-align: center;
+ margin-top: 32px;
+ font-size: 0.76rem;
+ color: #b0a898;
+ line-height: 1.6;
+ }
+ .footer a { color: var(--sage); text-decoration: none; }
+ .footer a:hover { text-decoration: underline; }
+
+ /* Responsive móvil */
+ @media (max-width: 768px) {
+ .header { padding: 28px 18px 24px; }
+ .header h1 { font-size: 1.6rem; }
+ .header p { font-size: 0.82rem; }
+ .notice { padding: 0 14px; }
+ .container { padding: 0 14px; }
+ .table-wrap { border-radius: 14px; overflow-x: hidden; box-shadow: 0 2px 12px var(--shadow); }
+
+ table { min-width: unset; display: block; }
+ thead { display: none; }
+ tbody, tbody tr, tbody td { display: block; width: 100%; }
+
+ tbody tr { border-bottom: 1px solid var(--border); padding: 16px 0; margin-bottom: 0; background: var(--warm-white); }
+ tbody tr:last-child { border-bottom: none; }
+
+ tbody tr.cat-header {
+ background: linear-gradient(90deg, #f0e8e0, #f5ede6);
+ padding: 12px 16px;
+ margin: 0;
+ border-bottom: 1px solid #ddd0c5;
+ border-radius: 0;
+ }
+ tbody tr.cat-header td { padding: 0; font-size: 1rem; width: auto; }
+
+ /* Producto principal en móvil */
+ tbody td.num { display: none; }
+ tbody td:nth-child(2) {
+ padding: 0 16px 14px;
+ border-bottom: 2px solid var(--border);
+ margin-bottom: 12px;
+ }
+ .prod-name { font-size: 1rem; }
+ .prod-sub { font-size: 0.78rem; }
+
+ /* Precios en grid */
+ tbody td.price-cell {
+ padding: 8px 16px;
+ border-bottom: 1px solid #f0e8e0;
+ position: relative;
+ }
+ tbody td.price-cell::before {
+ content: attr(data-label);
+ font-size: 0.65rem;
+ color: #9a9088;
+ text-transform: uppercase;
+ letter-spacing: 0.5px;
+ display: block;
+ margin-bottom: 4px;
+ }
+ tbody td.price-cell:last-of-type { border-bottom: none; }
+
+ .price-entry { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; padding-bottom: 4px; }
+ .store-name { font-size: 0.78rem; margin-bottom: 0; }
+ .price-link { font-size: 0.9rem; }
+
+ /* Promedio destacado en móvil */
+ tbody td.avg-cell {
+ padding: 14px 16px 0;
+ text-align: left;
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ border-top: 2px solid var(--border);
+ margin-top: 8px;
+ }
+ .avg-price { font-size: 1.3rem; }
+ .avg-label { font-size: 0.72rem; margin-top: 0; }
+ }
+</style>
+</head>
+<body>
+
+<div class="header">
+ <div class="header-inner">
+ <h1>Lista de Precios<br><em>Bebé Chile 2026</em></h1>
+ <p>21 productos · 5 precios con links por producto · Tiendas chilenas</p>
+ <div class="badge">Actualizado: 29 de mayo de 2026</div>
+ </div>
+</div>
+
+<div class="notice">
+ <div class="notice-box">
+ <strong>⚠ Aviso:</strong> Todos los precios mostrados son reales obtenidos de búsqueda web al 29/05/2026. Los precios pueden variar. Siempre verifica el precio final en la tienda antes de comprar. Productos marcados con ⚠ tienen disponibilidad limitada en Chile.
+ </div>
+</div>
+
+<div class="container">
+ <div class="table-wrap">
+ <table id="prices-table">
+ <thead>
+ <tr>
+ <th>#</th>
+ <th>Producto</th>
+ <th class="price-col">Tienda 1</th>
+ <th class="price-col">Tienda 2</th>
+ <th class="price-col">Tienda 3</th>
+ <th class="price-col">Tienda 4</th>
+ <th class="price-col">Tienda 5</th>
+ <th class="avg-col">Promedio</th>
+ </tr>
+ </thead>
+ <tbody>
+
+ <!-- MAMADERAS -->
+ <tr class="cat-header">
+ <td colspan="8">🍼 Mamaderas & Tetinas</td>
+ </tr>
+
+ <!-- 1. Pigeon Soft Touch vidrio 0+ -->
+ <tr>
+ <td class="num">1</td>
+ <td>
+ <div class="prod-name">Pigeon Soft Touch 0+ (Vidrio 160ml)</div>
+ <div class="prod-sub">Mamadera boca ancha, vidrio borosilicato, libre BPA, sistema anticólicos</div>
+ <span class="tag">Vidrio</span>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Pigeon.cl</span>
+ <a class="price-link" href="https://www.pigeon.cl/mamadera-pigeon-vidrio-softouch-boca-ancha-160ml-edad0meses-color-blanco-biberon-softouch-pigeon-vidrio/p/MLC29523001" target="_blank">$15.490</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Falabella</span>
+ <a class="price-link" href="https://www.falabella.com/falabella-cl/category/cat2670018/Mamaderas?f.product.brandName=pigeon" target="_blank">$11.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/mamadera-pigeon-soft-touch-vidrio" target="_blank">$11.075 – $15.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Baby Momys</span>
+ <a class="price-link" href="https://babymomys.cl/products/mamadera-de-vidrio-soft-touch-160ml-0" target="_blank">$12.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">Belleza y Nutrición</span>
+ <a class="price-link" href="https://www.bellezaynutricion.cl/mamadera-pigeon-soft-touch-vidrio-boca-ancha-160ml-para-edades-0-meses-blanco/p/MLC24345974" target="_blank">$13.290</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 2. Lansinoh 0+ -->
+ <tr>
+ <td class="num">2</td>
+ <td>
+ <div class="prod-name">Lansinoh 0+ (Plástico, Natural Wave 160ml)</div>
+ <div class="prod-sub">Nota: Lansinoh en Chile solo comercializa en plástico BPA-free. No hay versión vidrio confirmada.</div>
+ <span class="tag alert">⚠ Sin vidrio en Chile</span>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Lansinoh.cl</span>
+ <a class="price-link" href="https://www.lansinoh.cl/mamadera" target="_blank">$9.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Motherna</span>
+ <a class="price-link" href="https://motherna.cl/collections/lansinoh" target="_blank">$9.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">Crece Seguro</span>
+ <a class="price-link" href="https://creceseguro.cl/collections/lansinoh" target="_blank">$8.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Falabella</span>
+ <a class="price-link" href="https://www.falabella.com/falabella-cl/category/cat2670018/Mamaderas?f.product.brandName=lansinoh" target="_blank">$8.790</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/mamaderas-lansinoh" target="_blank">$9.990 – $12.000</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 3. Set de tetinas -->
+ <tr>
+ <td class="num">3</td>
+ <td>
+ <div class="prod-name">Set de Tetinas (repuesto)</div>
+ <div class="prod-sub">Tetinas de repuesto para mamadera (Pigeon, Lansinoh, Avent) — precio por 2 unidades</div>
+ <span class="tag blue">Repuesto</span>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Pigeon.cl (Pigeon x2)</span>
+ <a class="price-link" href="https://www.pigeon.cl/listado/bebes/lactancia-alimentacion/mamaderas-accesorios/" target="_blank">$8.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">KidsClub (Pigeon x2)</span>
+ <a class="price-link" href="https://www.kidsclub.cl/collections/pigeon-1/products/tetina-flexible-mamadera-pigeon-boca-estandar-tallas-s-m-l-y" target="_blank">$3.490</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre (varios)</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/mamaderas-accesorios-tetinas" target="_blank">$3.790 – $8.991</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Falabella (Avent x2)</span>
+ <a class="price-link" href="https://www.falabella.com/falabella-cl/category/cat2670018/Mamaderas?f.product.brandName=avent" target="_blank">$4.990 – $9.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">Pichintún (Lansinoh)</span>
+ <a class="price-link" href="https://www.pichintun.com/collections/lansinoh" target="_blank">$7.990 – $9.990</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 4. Vasos Philips Avent leche materna -->
+ <tr>
+ <td class="num">4</td>
+ <td>
+ <div class="prod-name">Vasos Philips Avent Leche Materna</div>
+ <div class="prod-sub">Set 10 vasos almacenamiento 180ml SCF618/10, reutilizables, libre BPA</div>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">KidsClub</span>
+ <a class="price-link" href="https://www.kidsclub.cl/products/set-avent-10-vasos-almacenamiento-y-adaptadores-leche-materna-scf618-10" target="_blank">$22.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Infanti</span>
+ <a class="price-link" href="https://infanti.cl/collections/extractor-de-leche-y-almacenamiento" target="_blank">$19.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">Falabella</span>
+ <a class="price-link" href="https://www.falabella.com/falabella-cl/product/140362499/Vasos-almacenamiento-leche-materna-180ml-10-unid.-Scf618-10/140362500" target="_blank">$23.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Tienda Philips</span>
+ <a class="price-link" href="https://www.tienda.philips.cl/vaso-almacenamiento-para-leche-materna-10-piezas-avent-scf618-10/p" target="_blank">$24.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/vasos-almacenamiento-leche-materna-avent" target="_blank">$19.990 – $24.990</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 5. Chupón Suavinex Zero Zero prematuro -->
+ <tr>
+ <td class="num">5</td>
+ <td>
+ <div class="prod-name">Chupón Suavinex Zero Zero Fisiológico Prematuros</div>
+ <div class="prod-sub">Talla -2 a 2 meses, silicona grado médico, tetina SX Pro, ultra ligero</div>
+ <span class="tag alert">Prematuro</span>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Pichintún</span>
+ <a class="price-link" href="https://www.pichintun.com/products/chupete-zero-zero-fisiologico-silicona-2-2-meses-talla-suavinex" target="_blank">$8.991</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Tienda Mimados</span>
+ <a class="price-link" href="https://www.tiendamimados.cl/suavinex-chupete-fisiologico-zero-zero" target="_blank">$10.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">Falabella</span>
+ <a class="price-link" href="https://www.falabella.com/falabella-cl/brand/SUAVINEX" target="_blank">$8.990 – $10.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/suavinex-zero-zero" target="_blank">$4.500 – $8.500</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">Motherna</span>
+ <a class="price-link" href="https://motherna.cl/collections/suavinex" target="_blank">$9.990 – $12.990</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- CUIDADO DE PIEL -->
+ <tr class="cat-header">
+ <td colspan="8">🧴 Cuidado de Piel / Higiene Bebé</td>
+ </tr>
+
+ <!-- 6. Lipikar Syndet AP+ -->
+ <tr>
+ <td class="num">6</td>
+ <td>
+ <div class="prod-name">La Roche-Posay Lipikar Syndet AP+</div>
+ <div class="prod-sub">Gel limpiador corporal 400ml, piel atópica, sin perfume, apto recién nacidos</div>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Dermotienda</span>
+ <a class="price-link" href="https://dermotienda.cl/products/lipikar-syndet-ap-400ml" target="_blank">$17.592</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Fcia. Ahumada</span>
+ <a class="price-link" href="https://www.farmaciasahumada.cl/limpiador-corporal-lipikar-syndet-ap--400-ml-44038.html" target="_blank">$18.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">Falabella</span>
+ <a class="price-link" href="https://www.falabella.com/falabella-cl/product/6318013/" target="_blank">$19.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Salcobrand</span>
+ <a class="price-link" href="https://salcobrand.cl/products/gel-de-ducha-la-roche-posay-lipikar-syndet-ap-400ml" target="_blank">$21.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/lipikar-syndet-ap" target="_blank">$15.000 – $18.990</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 7. Lipikar Baume Light AP+M -->
+ <tr>
+ <td class="num">7</td>
+ <td>
+ <div class="prod-name">La Roche-Posay Lipikar Baume Light AP+M</div>
+ <div class="prod-sub">Bálsamo hidratante ligero 400ml, piel seca/atópica, triple acción, sin perfume</div>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Fcia. Ahumada</span>
+ <a class="price-link" href="https://www.farmaciasahumada.cl/balsamo-hidratante-lipikar-baume-light-ap--m-400-ml-90668.html" target="_blank">$32.149</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Salcobrand</span>
+ <a class="price-link" href="https://salcobrand.cl/products/balsamo-hidratante-lipikar-baume-light-ap-m-400ml" target="_blank">$31.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">FarmaCompara</span>
+ <a class="price-link" href="https://www.farmacompara.cl/producto/balsamo-la-roche-posay-hidratante-lipikar-baume-light-ap-m-400-ml" target="_blank">$28.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Farmacia Estevez</span>
+ <a class="price-link" href="https://farmaciaestevez.com/inicio/2992-lipikar-baume-apm-light-400-ml.html" target="_blank">$30.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/la-roche-posay-baume-light" target="_blank">$25.000 – $32.000</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 8. Isdin Baby Naturals -->
+ <tr>
+ <td class="num">8</td>
+ <td>
+ <div class="prod-name">Isdin Baby Naturals Bálsamo Reparador Perioral</div>
+ <div class="prod-sub">15ml, 99% ingredientes naturales, protección zona labial y nasal del bebé</div>
+ <span class="tag blue">Isdin Baby</span>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Rappi / Fcia. Ahumada</span>
+ <a class="price-link" href="https://www.rappi.cl/p/isdin-reparador-facial-perioral-bab-340330" target="_blank">~$10.400</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Salcobrand</span>
+ <a class="price-link" href="https://salcobrand.cl/products/reparador-facial-perioral-baby-naturals" target="_blank">~$12.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">Dermotienda</span>
+ <a class="price-link" href="https://dermotienda.cl/collections/pediatrico-isdin" target="_blank">~$11.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Fcia. Ahumada (directo)</span>
+ <a class="price-link" href="https://www.farmaciasahumada.cl" target="_blank">~$12.000 – $14.000</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/isdin-baby-naturals" target="_blank">~$8.000 – $12.000</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 9. Toallitas húmedas 99.9% agua -->
+ <tr>
+ <td class="num">9</td>
+ <td>
+ <div class="prod-name">Toallitas Húmedas 99.9% Agua</div>
+ <div class="prod-sub">Aqua Baby (60 un) o WaterWipes — 2 ingredientes, aptas prematuros</div>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Tottus (Aqua Baby 60)</span>
+ <a class="price-link" href="https://www.tottus.cl/tottus-cl/articulo/125793311/" target="_blank">$2.690</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Aqua Baby Chile</span>
+ <a class="price-link" href="https://aquababy.cl/collections/tienda" target="_blank">~$3.500</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre (Aqua Baby)</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/aqua-baby-toallitas" target="_blank">$3.114 – $5.000</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre (WaterWipes)</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/water-wipes" target="_blank">$12.990 – $30.351</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">Falabella (WaterWipes)</span>
+ <a class="price-link" href="https://www.falabella.com/falabella-cl/brand/WATER%20WIPES" target="_blank">$14.990 – $19.990</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 10. Termómetro digital -->
+ <tr>
+ <td class="num">10</td>
+ <td>
+ <div class="prod-name">Termómetro Digital (cualquier marca)</div>
+ <div class="prod-sub">Axilar, rectal o de oído, punta flexible, lectura rápida 60 seg</div>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">FarmaCompara</span>
+ <a class="price-link" href="https://www.farmacompara.cl/producto/termometro-digital" target="_blank">Desde $9.040</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Salcobrand</span>
+ <a class="price-link" href="https://salcobrand.cl/termometro-digital" target="_blank">~$5.499 – $7.699</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">Falabella</span>
+ <a class="price-link" href="https://www.falabella.com/falabella-cl/category/cat13650010/Termometros" target="_blank">$4.990 – $15.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/termometro-digital-bebe" target="_blank">$3.990 – $12.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">Cruz Verde</span>
+ <a class="price-link" href="https://www.cruzverde.cl/termometro-digital/" target="_blank">$6.990 – $14.990</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 11. Bepanthol pañalitis -->
+ <tr>
+ <td class="num">11</td>
+ <td>
+ <div class="prod-name">Bepanthol Ungüento (pañalitis)</div>
+ <div class="prod-sub">5% dexpantenol, protector contra coceduras, 30g</div>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Rappi / Fcia. Ahumada</span>
+ <a class="price-link" href="https://www.rappi.cl/p/bepanthol-unguento-protector-contra-130690" target="_blank">$4.870</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Farmacia Meki / Salcobrand</span>
+ <a class="price-link" href="https://farmaciameki.cl/producto/bepanthol-5-percent-bayer-7773" target="_blank">$4.289 – $5.499</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">Cruz Verde</span>
+ <a class="price-link" href="https://www.cruzverde.cl/buscador-de-medicamentos/bepanthol-unguento-5" target="_blank">$5.690</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Fcia. Ahumada</span>
+ <a class="price-link" href="https://www.farmaciasahumada.cl" target="_blank">$5.699</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/bepanthol-bebe" target="_blank">$5.000 – $8.000</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 12. Limador uñas eléctrico -->
+ <tr>
+ <td class="num">12</td>
+ <td>
+ <div class="prod-name">Limador de Uñas Eléctrico Bebé</div>
+ <div class="prod-sub">Lima eléctrica con discos por etapa (Bbluv Trimö, Supermom, genéricos)</div>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">LB Chile</span>
+ <a class="price-link" href="https://lbchile.com/producto/lima-de-unas-electrico-para-bebes/" target="_blank">$4.400</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Supermom</span>
+ <a class="price-link" href="https://www.supermom.cl/products/limador-de-unas-electrico-para-bebe" target="_blank">~$8.990 – $12.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre (genérico)</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/lima-unas-bebe" target="_blank">$4.000 – $8.000</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre (Bbluv Trimö)</span>
+ <a class="price-link" href="https://articulo.mercadolibre.cl/MLC-570730560-limador-de-unas-electrico-para-bebes-bbluv-_JM" target="_blank">~$12.000 – $16.000</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">Falabella</span>
+ <a class="price-link" href="https://www.falabella.com/falabella-cl/shop/limador-uñas-bebe" target="_blank">$5.990 – $15.990</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- LACTANCIA -->
+ <tr class="cat-header">
+ <td colspan="8">🤱 Lactancia & Almacenamiento</td>
+ </tr>
+
+ <!-- 13. Bolsas almacenamiento leche -->
+ <tr>
+ <td class="num">13</td>
+ <td>
+ <div class="prod-name">Bolsas Almacenamiento Leche Materna</div>
+ <div class="prod-sub">Marcas: Lansinoh (25-50 uds), Medela, Avent — preesterilizadas, libre BPA</div>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Infanti (Avent 180ml)</span>
+ <a class="price-link" href="https://infanti.cl/products/bolsas-para-almacenar-leche-180ml" target="_blank">$8.990 – $12.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Pichintún (Lansinoh 25u)</span>
+ <a class="price-link" href="https://www.pichintun.com/products/bolsa-de-almacenamiento-de-leche-materna-25-uds-lansinoh" target="_blank">$9.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">Lansinoh.cl</span>
+ <a class="price-link" href="https://www.lansinoh.cl/" target="_blank">$9.990 – $10.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Babycentro (Lansinoh 100u)</span>
+ <a class="price-link" href="https://www.babycentro.com/products/bolsas-para-almacenar-leche-materna-lansinoh" target="_blank">$71.120</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/bolsas-almacenamiento-leche-materna" target="_blank">$7.000 – $12.000</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 14. Bolsas esterilizadoras -->
+ <tr>
+ <td class="num">14</td>
+ <td>
+ <div class="prod-name">Bolsas Esterilizadoras Microondas</div>
+ <div class="prod-sub">Avent SCF297/05 (5u) o Medela Quick Clean (5u) — vapor, 99.9% bacterias</div>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">KidsClub (Avent 5u)</span>
+ <a class="price-link" href="https://www.kidsclub.cl/products/bolsas-esterilizadoras-para-microondas-scf297-05" target="_blank">$12.090</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Mr Click (Avent 5u)</span>
+ <a class="price-link" href="https://mrclick.cl/products/bolsas-esterilizadoras-microondas-avent-scf297-05-5un" target="_blank">$10.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">Babytuto (Medela 5u)</span>
+ <a class="price-link" href="https://www.babytuto.com/productos/lactancia-esterilizador,bolsas-para-esterilizar-quick-clean-5-uds-medela,143" target="_blank">$14.900</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Fcia. Ahumada (Avent 5u)</span>
+ <a class="price-link" href="https://www.farmaciasahumada.cl/bolsas-esterilizadoras-avent--5-un-88599.html" target="_blank">$11.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/bolsas-esterilizadoras-medela" target="_blank">$8.000 – $15.000</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 15. Jabón biberones Pigeon -->
+ <tr>
+ <td class="num">15</td>
+ <td>
+ <div class="prod-name">Jabón Limpiador Biberones Pigeon</div>
+ <div class="prod-sub">Líquido limpiador natural, 100% comestible, 450ml o 700ml</div>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Pigeon.cl (450ml Yuzu)</span>
+ <a class="price-link" href="https://www.pigeon.cl/MLC-1489467987-pigeon-limpiador-de-biberones-450ml-yuzu-_JM" target="_blank">$7.310</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Pigeon.cl (650ml recarga)</span>
+ <a class="price-link" href="https://www.pigeon.cl/MLC-1990316408-limpiador-de-biberones-recarga-650-ml-_JM" target="_blank">$8.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">Salcobrand (450ml)</span>
+ <a class="price-link" href="https://salcobrand.cl/products/limpiador-de-biberones-450-ml" target="_blank">$7.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Fcia. Ahumada (700ml)</span>
+ <a class="price-link" href="https://www.farmaciasahumada.cl/limpiador-pigeon-de-biberones-700-ml-86940.html" target="_blank">$11.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/jabon-biberones-pigeon" target="_blank">$6.990 – $10.000</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- PORTEO & POST PARTO -->
+ <tr class="cat-header">
+ <td colspan="8">🌿 Porteo, Post Parto & Lactancia Mamá</td>
+ </tr>
+
+ <!-- 16. Fular de tela -->
+ <tr>
+ <td class="num">16</td>
+ <td>
+ <div class="prod-name">Fular de Tela (portabebé)</div>
+ <div class="prod-sub">Fular elástico o tejido, 100% algodón, recién nacidos hasta ~9 kg</div>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Falabella</span>
+ <a class="price-link" href="https://www.falabella.com/falabella-cl/shop/fular" target="_blank">$7.990 – $25.900</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Infanti (Druk fular)</span>
+ <a class="price-link" href="https://infanti.cl/products/portabebe-druk" target="_blank">$19.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/fular-portabebe" target="_blank">$5.990 – $15.000</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Ripley</span>
+ <a class="price-link" href="https://simple.ripley.cl/jugueteria-y-ninos/mundo-bebe/porta-bebe" target="_blank">$8.990 – $19.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">Paris</span>
+ <a class="price-link" href="https://www.paris.cl/portabebe-bebe/" target="_blank">$9.990 – $24.990</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 17. Compresas Multi-Mam -->
+ <tr>
+ <td class="num">17</td>
+ <td>
+ <div class="prod-name">Compresas Multi-Mam (12 unidades)</div>
+ <div class="prod-sub">Compresas de gel para pezones irritados, complejo 2QR, gel seguro para bebé</div>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Cuatro Glaciares</span>
+ <a class="price-link" href="https://cuatroglaciares.cl/collections/multi-mam" target="_blank">$13.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Crece Seguro</span>
+ <a class="price-link" href="https://creceseguro.cl/collections/multi-mam" target="_blank">$9.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">Tienda Urbano</span>
+ <a class="price-link" href="https://urbano.cl/collections/multi-mam" target="_blank">$8.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Rappi</span>
+ <a class="price-link" href="https://www.rappi.cl/p/multi-mam-compresas-alivio-del-pezo-131979" target="_blank">$8.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">Motherna</span>
+ <a class="price-link" href="https://motherna.cl/products/compresas-multi-mam-12-uns" target="_blank">$11.990</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 18. Faja post parto 3 pliegues -->
+ <tr>
+ <td class="num">18</td>
+ <td>
+ <div class="prod-name">Faja Post Parto 3 Pliegues</div>
+ <div class="prod-sub">Faja abdominal postparto en 3 piezas, soporte lumbar y abdominal</div>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Falabella</span>
+ <a class="price-link" href="https://www.falabella.com/falabella-cl/product/140485218/" target="_blank">$12.990 – $29.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Ripley</span>
+ <a class="price-link" href="https://simple.ripley.cl/mujer/faja-postparto" target="_blank">$9.990 – $24.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">Paris</span>
+ <a class="price-link" href="https://www.paris.cl/faja-post-parto/" target="_blank">$11.990 – $27.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/faja-postparto" target="_blank">$6.990 – $19.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">Pichintún</span>
+ <a class="price-link" href="https://www.pichintun.com/collections/fajas" target="_blank">$14.990 – $24.990</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- EXTRACTORES -->
+ <tr class="cat-header">
+ <td colspan="8">💊 Extractores de Leche Eléctricos Dobles</td>
+ </tr>
+
+ <!-- 19. Medela Swing Maxi doble -->
+ <tr>
+ <td class="num">19</td>
+ <td>
+ <div class="prod-name">Extractor Doble Eléctrico Swing Maxi™ Medela</div>
+ <div class="prod-sub">Doble eléctrico, 2-Phase Expression, embudo PersonalFit Flex, batería recargable USB</div>
+ <span class="tag">Doble Eléctrico</span>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Infanti</span>
+ <a class="price-link" href="https://infanti.cl/collections/extractor-de-leche-y-almacenamiento" target="_blank">$189.990 – $219.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Pichintún</span>
+ <a class="price-link" href="https://www.pichintun.com/products/extractor-de-leche-electrico-doble-swing-maxi" target="_blank">$199.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">Babylink</span>
+ <a class="price-link" href="https://www.babylink.cl/producto/codbb14438-extractor-de-leche-medela-swing-maxi/" target="_blank">$185.000</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Mr Click</span>
+ <a class="price-link" href="https://mrclick.cl/products/extractor-de-leche-electrico-medela-doble-swing-maxi" target="_blank">$195.000</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/sacaleche-electrico-doble-medela" target="_blank">$179.990 – $229.990</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 20. Avent extractor doble eléctrico -->
+ <tr>
+ <td class="num">20</td>
+ <td>
+ <div class="prod-name">Extractor Doble Eléctrico 8 Niveles Avent SCF393/11</div>
+ <div class="prod-sub">8 niveles estimulación + 16 extracción, cojín silicona, motor silencioso</div>
+ <span class="tag">Doble Eléctrico</span>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Infanti</span>
+ <a class="price-link" href="https://infanti.cl/products/extractor-de-leche-electrico" target="_blank">$251.993</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">KidsClub</span>
+ <a class="price-link" href="https://www.kidsclub.cl/products/extractor-de-leche-electrico-doble-avent-scf393-11" target="_blank">$279.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">Falabella</span>
+ <a class="price-link" href="https://www.falabella.com/falabella-cl/brand/AVENT" target="_blank">$299.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Dafiti</span>
+ <a class="price-link" href="https://www.dafiti.cl/Extractor-De-Leche-Electrico-Doble-Avent-1409034.html" target="_blank">$239.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/extractor-leche-avent" target="_blank">$189.990 – $259.990</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ <!-- 21. Lansinoh Signature Pro -->
+ <tr>
+ <td class="num">21</td>
+ <td>
+ <div class="prod-name">Lansinoh Signature Pro Doble Eléctrico</div>
+ <div class="prod-sub">Doble eléctrico, 8 niveles, succión hasta 280 mmHg, 3 estilos, LCD — ✅ cumple >220 mmHg</div>
+ <span class="tag">Doble Eléctrico</span>
+ <span class="tag alert">280 mmHg ✓</span>
+ </td>
+ <td class="price-cell" data-label="Tienda 1">
+ <div class="price-entry">
+ <span class="store-name">Crece Seguro</span>
+ <a class="price-link" href="https://creceseguro.cl/collections/lansinoh" target="_blank">$139.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 2">
+ <div class="price-entry">
+ <span class="store-name">Lansinoh.cl (Smartpump 2.0)</span>
+ <a class="price-link" href="https://lansinoh.cl/collections/all" target="_blank">$117.564</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 3">
+ <div class="price-entry">
+ <span class="store-name">TienditaDelu</span>
+ <a class="price-link" href="https://tienditadelu.com/products/extractor-de-leche-doble-electrico-lansinoh-signature-pro" target="_blank">$159.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 4">
+ <div class="price-entry">
+ <span class="store-name">Wua-Wua</span>
+ <a class="price-link" href="https://wua-wua.cl/products/extractor-de-leche-electrico-doble" target="_blank">$149.990</a>
+ </div>
+ </td>
+ <td class="price-cell" data-label="Tienda 5">
+ <div class="price-entry">
+ <span class="store-name">MercadoLibre</span>
+ <a class="price-link" href="https://listado.mercadolibre.cl/lansinoh-extractor" target="_blank">$119.990 – $159.990</a>
+ </div>
+ </td>
+ <td class="avg-cell"><div class="avg-price">—</div><div class="avg-label">Promedio</div></td>
+ </tr>
+
+ </tbody>
+ </table>
+ </div>
+
+ <!-- Nota sobre extractores -->
+ <div style="margin-top: 20px; background: #e8f2ed; border-left: 4px solid var(--sage); border-radius: 8px; padding: 14px 18px; font-size: 0.82rem; color: #3a5a45; line-height: 1.6;">
+ <strong>📋 Nota sobre extractores de leche (productos 19-21):</strong><br>
+ — <strong>Medela Swing Maxi™ Doble</strong>: ~250 mmHg (fuerza hospitalaria). ✅ Cumple >220 mmHg.<br>
+ — <strong>Avent SCF393/11 Doble</strong>: hasta 270 mmHg (8 estimulación + 16 extracción). ✅ Cumple >220 mmHg.<br>
+ — <strong>Lansinoh Signature Pro</strong>: hasta 280 mmHg. ✅ Cumple >220 mmHg. (Nota: en Chile se vende más el Smartpump 2.0 con Bluetooth).
+ </div>
+
+ <div class="footer">
+ <p>Precios obtenidos mediante búsqueda web al <strong>29 de mayo de 2026</strong> · Todos en CLP · Verificar precio final en cada tienda</p>
+ </div>
+</div>
+
+<script>
+(function() {
+  function parsePrice(text) {
+    // Normalizar: quitar símbolos, ~, "Desde ", espacios extra
+    let clean = text
+      .replace(/~/g, '')
+      .replace(/desde/gi, '')
+      .replace(/\$/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    // Detectar rango con – o -
+    const rangeMatch = clean.match(/([\d.]+)\s*[–-]\s*([\d.]+)/);
+    if (rangeMatch) {
+      const min = parseFloat(rangeMatch[1].replace(/\./g, ''));
+      const max = parseFloat(rangeMatch[2].replace(/\./g, ''));
+      return (min + max) / 2;
+    }
+
+    // Precio único
+    const singleMatch = clean.match(/([\d.]+)/);
+    if (singleMatch) {
+      return parseFloat(singleMatch[1].replace(/\./g, ''));
+    }
+
+    return null;
+  }
+
+  function formatPrice(num) {
+    return '$' + Math.round(num).toLocaleString('es-CL');
+  }
+
+  const rows = document.querySelectorAll('#prices-table tbody tr');
+  rows.forEach(function(row) {
+    if (row.classList.contains('cat-header')) return;
+
+    const priceLinks = row.querySelectorAll('.price-link');
+    let sum = 0;
+    let count = 0;
+
+    priceLinks.forEach(function(link) {
+      const val = parsePrice(link.textContent);
+      if (val !== null && !isNaN(val) && val > 0) {
+        sum += val;
+        count++;
+      }
+    });
+
+    const avgCell = row.querySelector('.avg-price');
+    if (avgCell && count > 0) {
+      const avg = sum / count;
+      avgCell.textContent = formatPrice(avg);
+    } else if (avgCell) {
+      avgCell.textContent = 'N/A';
+      avgCell.style.color = '#bbb0a8';
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
